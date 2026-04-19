@@ -6,179 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qurilish Mirabad</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box
-        }
-
-        body,
-        html {
-            overflow-x: hidden
-        }
-
-        .hero {
-            padding-top: 18px;
-            padding-bottom: 18px
-        }
-
-        .hero__container {
-            max-width: 511px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 0 10px
-        }
-
-        .hero__top {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 8px;
-            gap: 15px
-        }
-
-        .hero__top-min {
-            border-radius: 5px;
-            max-width: 148px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5px;
-            width: 100%;
-            padding: 8px 11px;
-            background-color: #BCA17B;
-            color: white
-        }
-
-        .hero__top-min p {
-            font-family: Sora, sans-serif;
-            font-weight: 400;
-            font-size: clamp(11px, 3.5vw, 12px);
-            white-space: nowrap;
-            line-height: 100%
-        }
-
-        .hero__title {
-            font-family: Sora, sans-serif;
-            font-weight: 700;
-            font-size: clamp(19.5px, 6.1vw, 32px);
-            line-height: 125%;
-            margin-bottom: 4px;
-            text-align: center;
-            text-transform: uppercase
-        }
-
-        .hero__title span {
-            color: #CFA76F;
-        }
-
-        .text {
-            font-family: Sora, sans-serif;
-            font-weight: 300;
-            font-size: clamp(11px, 3.5vw, 16px);
-            line-height: 100%;
-            text-align: center;
-            margin-bottom: 16px;
-        }
-
-        .hero__images {
-            max-width: 460px;
-            width: 100%;
-            height: auto;
-            position: relative;
-            z-index: -2;
-            margin: 0 auto;
-            display: flex
-        }
-
-        .hero__btn {
-            text-decoration: none;
-            max-width: 352px;
-            width: 100%;
-            border: 1.52px solid #FFE7AB;
-            border-radius: 12px;
-            background: linear-gradient(90deg, #FFCD7D 0%, #FFDDA5 54.33%, #FFCD7D 100%);
-            font-family: Sora, sans-serif;
-            box-shadow: 0px 20px 40px 0px #FFFFFF;
-            box-shadow: 0px 0px 45.74px 0px #FFFFFF40 inset;
-            box-shadow: 0px 3.05px 0px 0px #977843;
-            font-weight: 600;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 12px;
-            font-size: clamp(18px, 5.9vw, 20px);
-            line-height: 100%;
-            color: #76560C;
-            padding: 36px 0 34px 0;
-            text-align: center
-        }
-
-        .hero__info {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 18px
-        }
-
-        .hero__info p {
-            font-family: Sora, sans-serif;
-            font-weight: 300;
-            position: absolute;
-            z-index: 3;
-            font-size: clamp(11px, 3.5vw, 14px);
-            margin-left: -70px;
-            line-height: 150%
-        }
-
-        .hero__info img {
-            max-width: clamp(80px, 25vw, 95px);
-            margin-top: 5px;
-            position: relative;
-            z-index: -10;
-            margin-left: 220px;
-            width: 100%
-        }
-
-        .hero__info p span {
-            font-weight: 700
-        }
-
-        .hero__icon1 {
-            position: absolute;
-            right: clamp(-20px, -11vw, 500px);
-            top: 211px;
-        }
-
-        .hero__icon2 {
-            position: absolute;
-            left: clamp(-36px, -11vw, 500px);
-            top: 196px;
-        }
-
-        .hero__icon3 {
-            position: absolute;
-            right: clamp(-20px, -11vw, 500px);
-            top: 437px;
-        }
-
-        @media (max-width:340px) {
-            .hero__icon3 {
-                top: 373px;
-            }
-
-            .hero__icon2 {
-                top: 175px;
-            }
-
-            .hero__icon1 {
-                top: 187px;
-            }
-        }
+  * { margin: 0; padding: 0; box-sizing: border-box } body, html { overflow-x: hidden } .hero { padding-top: 18px; padding-bottom: 18px } .hero__container { max-width: 511px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 10px } .hero__top { display: flex; align-items: center; justify-content: center; margin-bottom: 8px; gap: 15px } .hero__top-min { border-radius: 5px; max-width: 148px; display: flex; align-items: center; justify-content: center; gap: 5px; width: 100%; padding: 8px 11px; background-color: #BCA17B; color: white } .hero__top-min p { font-family: Sora, sans-serif; font-weight: 400; font-size: clamp(11px, 3.5vw, 12px); white-space: nowrap; line-height: 100% } .hero__title { font-family: Sora, sans-serif; font-weight: 700; font-size: clamp(19.5px, 6.1vw, 32px); line-height: 125%; margin-bottom: 4px; text-align: center; text-transform: uppercase } .hero__title span { color: #CFA76F; } .text { font-family: Sora, sans-serif; font-weight: 300; font-size: clamp(11px, 3.5vw, 16px); line-height: 100%; text-align: center; margin-bottom: 16px; } .hero__images { max-width: 460px; width: 100%; height: auto; position: relative; z-index: -2; margin: 0 auto; display: flex } .hero__btn { text-decoration: none; max-width: 352px; width: 100%; border: 1.52px solid #FFE7AB; border-radius: 12px; background: linear-gradient(90deg, #FFCD7D 0%, #FFDDA5 54.33%, #FFCD7D 100%); font-family: Sora, sans-serif; box-shadow: 0px 20px 40px 0px #FFFFFF; box-shadow: 0px 0px 45.74px 0px #FFFFFF40 inset; box-shadow: 0px 3.05px 0px 0px #977843; font-weight: 600; margin: 0 auto; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; font-size: clamp(18px, 5.9vw, 20px); line-height: 100%; color: #76560C; padding: 36px 0 34px 0; text-align: center } .hero__info { display: flex; align-items: center; justify-content: center; margin-bottom: 18px } .hero__info p { font-family: Sora, sans-serif; font-weight: 300; position: absolute; z-index: 3; font-size: clamp(11px, 3.5vw, 14px); margin-left: -70px; line-height: 150% } .hero__info img { max-width: clamp(80px, 25vw, 95px); margin-top: 5px; position: relative; z-index: -10; margin-left: 220px; width: 100% } .hero__info p span { font-weight: 700 } .hero__icon1 { position: absolute; right: clamp(-20px, -11vw, 500px); top: 211px; } .hero__icon2 { position: absolute; left: clamp(-36px, -11vw, 500px); top: 196px; } .hero__icon3 { position: absolute; right: clamp(-20px, -11vw, 500px); top: 437px; } @media (max-width:340px) { .hero__icon3 { top: 373px; } .hero__icon2 { top: 175px; } .hero__icon1 { top: 187px; } }
     </style>
     <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
     <noscript>
@@ -221,7 +49,7 @@
 
             <div class="hero__container">
                 <a class="hero__btn" style="margin-top: -55px; position: relative; z-index: 5;"
-                    href="https://t.me/+qangF2y4Z083NDYy">
+                    href="#">
                     Taqdimotga ro’yxatdan o’tish
                 </a>
 
@@ -237,25 +65,6 @@
         </section>
     </main>
 
-    <!-- Meta Pixel Code -->
-    <script defer>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1600503917852512');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=1600503917852512&ev=PageView&noscript=1" /></noscript>
-    <!-- End Meta Pixel Code -->
 </body>
 
 </html>
