@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qurilish Mirabad</title>
+    <style>
+        * { padding: 0; margin: 0; box-sizing: border-box } body, html { overflow-x: hidden; } body { background-color: #020411; } .hero { padding-top: 16px; padding-bottom: 36px; } .hero__container { max-width: 490px; margin: 0 auto; padding: 0 10px; } .wrapper { background-image: url(./images/bg.avif); background-repeat: no-repeat; background-size: cover; } .hero__top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; max-width: 450px; width: 100%; } .hero__top-min { border-left: 1px solid white; padding-left: 5px; } .hero__top-min p { font-family: Inter, sans-serif; font-weight: 400; font-size: 14px; line-height: 130%; color: #FFE9A6; } .hero__top-min p span { font-family: Inter, sans-serif; font-weight: 400; font-size: 12px; line-height: 130%; color: white; } .hero__title { font-family: Kuunari, sans-serif; font-weight: 900; font-size: clamp(28px, 8.9vw, 42px); line-height: 120%; text-align: center; text-transform: uppercase; margin-bottom: 16px; color: white; } .hero__title span { color: #FFD045; } .hero__main { max-width: 490px; margin: 0 auto; position: relative; } .hero__main p { font-family: Italianno, sans-serif; font-weight: 400; font-size: clamp(25px, 8.5vw, 32px); line-height: 100%; letter-spacing: 2%; margin-bottom: -25px; padding-left: 10px; color: white; transform: rotate(-7.53deg); } .hero__main img { max-width: 490px; width: 100%; height: auto; margin-bottom: -4px; } .hero__btn { max-width: 441px; width: 100%; background: linear-gradient(270deg, #FECC63 3.64%, #FFE7B9 40.8%, #FED48C 91.15%); padding: 45px 0; display: flex; align-items: center; justify-content: center; gap: 8px; color: black; text-decoration: none; font-family: Kuunari, sans-serif; font-weight: 700; font-size: clamp(23px, 7vw, 30px); line-height: 100%; letter-spacing: 5%; margin: 0 auto; border-radius: 24px; border: none; cursor: pointer; margin-top: -20px; position: relative; z-index: 2; text-align: center; text-transform: uppercase; } @media (max-width:340px) { .hero__btn { padding: 38px 0; } }
+    </style>
+    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="./css/main.css" />
+    </noscript>
+</head>
+
+<body>
+
+    <main>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="wrapper">
+                    <div class="hero__top">
+                        <div class="hero__top-min">
+                            <p>20:00 <br>
+                                <span>Vaqti</span>
+                            </p>
+                        </div>
+                        <img src="./images/logo.avif" loading="lazy" decoding="async" width="170" height="44"
+                            alt="logo">
+                        <div class="hero__top-min">
+                            <p>30-Aprel
+                                <br>
+                                <span>Kuni</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <h1 class="hero__title">Olmaliq shahrida <span>200 mln <br> so‘mgacha chegirma</span> bilan <br> yangi uy xarid qiling.
+                    </h1>
+                </div>
+            </div>
+            <div class="hero__main">
+                <p>Komfort klassdagi loyiha</p>
+
+                <img src="./images/mainImg.avif" loading="lazy" decoding="async" width="490" height="464" alt="mainImg">
+            </div>
+
+            <div style="padding: 0 10px;">
+                <a href="https://t.me/+_J6FElo2H05lNjgy" class="hero__btn">
+                    Taqdimotga qatnashish
+                    <img src="./images/telegram.avif" loading="lazy" decoding="async" width="29" height="29" alt="telegram">
+                </button>
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Meta Pixel Code -->
+<script defer>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '898992643009731');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=898992643009731&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</body>
+
+</html>
