@@ -1,87 +1,59 @@
 <!DOCTYPE html>
 <html lang="uz">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
     <title>Olmaliq City</title>
+    <link rel="preload" as="image" href="./images/mainImg.avif" fetchpriority="high" type="image/avif">
+    <link rel="preload" as="font" type="font/woff2" href="./font/Sora-Bold.subset.AZaz09-space-symbols.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="./font/Sora-Regular-subset.woff2" crossorigin>
+    <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+    <link rel="preconnect" href="https://www.facebook.com" crossorigin>
+    <link rel="dns-prefetch" href="https://connect.facebook.net">
     <style>
-  * { margin: 0; padding: 0; box-sizing: border-box } body, html { overflow-x: hidden } .hero { padding-top: 18px; padding-bottom: 18px } .hero__container { max-width: 511px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 10px } .hero__top { display: flex; align-items: center; justify-content: center; margin-bottom: 8px; gap: 15px } .hero__top-min { border-radius: 5px; max-width: 148px; display: flex; align-items: center; justify-content: center; gap: 5px; width: 100%; padding: 8px 11px; background-color: #BCA17B; color: white } .hero__top-min p { font-family: Sora, sans-serif; font-weight: 400; font-size: clamp(11px, 3.5vw, 12px); white-space: nowrap; line-height: 100% } .hero__title { font-family: Sora, sans-serif; font-weight: 700; font-size: clamp(19.5px, 6.1vw, 32px); line-height: 125%; margin-bottom: 4px; text-align: center; text-transform: uppercase } .hero__title span { color: #CFA76F; } .text { font-family: Sora, sans-serif; font-weight: 300; font-size: clamp(11px, 3.5vw, 16px); line-height: 100%; text-align: center; margin-bottom: 16px; } .hero__images { max-width: 460px; width: 100%; height: auto; position: relative; z-index: -2; margin: 0 auto; display: flex } .hero__btn { text-decoration: none; max-width: 352px; width: 100%; border: 1.52px solid #FFE7AB; border-radius: 12px; background: linear-gradient(90deg, #FFCD7D 0%, #FFDDA5 54.33%, #FFCD7D 100%); font-family: Sora, sans-serif; box-shadow: 0px 20px 40px 0px #FFFFFF; box-shadow: 0px 0px 45.74px 0px #FFFFFF40 inset; box-shadow: 0px 3.05px 0px 0px #977843; font-weight: 600; margin: 0 auto; display: flex; align-items: center; justify-content: center; margin-bottom: 12px; font-size: clamp(18px, 5.9vw, 20px); line-height: 100%; color: #76560C; padding: 36px 0 34px 0; text-align: center } .hero__info { display: flex; align-items: center; justify-content: center; margin-bottom: 18px } .hero__info p { font-family: Sora, sans-serif; font-weight: 300; position: absolute; z-index: 3; font-size: clamp(11px, 3.5vw, 14px); margin-left: -70px; line-height: 150% } .hero__info img { max-width: clamp(80px, 25vw, 95px); margin-top: 5px; position: relative; z-index: -10; margin-left: 220px; width: 100% } .hero__info p span { font-weight: 700 } .hero__icon1 { position: absolute; right: clamp(-20px, -11vw, 500px); top: 211px; } .hero__icon2 { position: absolute; left: clamp(-36px, -11vw, 500px); top: 196px; } .hero__icon3 { position: absolute; right: clamp(-20px, -11vw, 500px); top: 437px; } @media (max-width:340px) { .hero__icon3 { top: 373px; } .hero__icon2 { top: 175px; } .hero__icon1 { top: 187px; } } @keyframes btnWave { 0% { box-shadow: 0px 3.05px 0px 0px #977843, 0 0 0 0 rgba(255,205,125,0.6); } 70% { box-shadow: 0px 3.05px 0px 0px #977843, 0 0 0 18px rgba(255,205,125,0); } 100% { box-shadow: 0px 3.05px 0px 0px #977843, 0 0 0 0 rgba(255,205,125,0); } } .hero__btn { animation: btnWave 1.8s infinite; }
+        *{margin:0;padding:0;box-sizing:border-box}body,html{overflow-x:hidden}.hero{padding:18px 0}.hero__container{max-width:511px;margin:0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 10px}.hero__top{display:flex;align-items:center;justify-content:center;margin-bottom:8px;gap:15px}.hero__top-min{border-radius:5px;max-width:148px;display:flex;align-items:center;justify-content:center;gap:5px;width:100%;padding:8px 11px;background:#BCA17B;color:#fff}.hero__top-min p{font:400 clamp(11px,3.5vw,12px)/100% Sora,sans-serif;white-space:nowrap}.hero__title{font:700 clamp(19.5px,6.1vw,32px)/125% Sora,sans-serif;margin-bottom:4px;text-align:center;text-transform:uppercase}.hero__title span{color:#CFA76F}.text{font:300 clamp(11px,3.5vw,16px)/100% Sora,sans-serif;text-align:center;margin-bottom:16px}.hero__images{max-width:460px;width:100%;height:auto;position:relative;z-index:-2;margin:0 auto;display:flex}.hero__btn{text-decoration:none;max-width:352px;width:100%;border:1.52px solid #FFE7AB;border-radius:12px;background:linear-gradient(90deg,#FFCD7D 0%,#FFDDA5 54.33%,#FFCD7D 100%);font:600 clamp(18px,5.9vw,20px)/100% Sora,sans-serif;box-shadow:0 3.05px 0 0 #977843,0 0 45.74px 0 #FFFFFF40 inset;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;color:#76560C;padding:36px 0 34px;text-align:center;animation:btnWave 1.8s infinite}.hero__info{display:flex;align-items:center;justify-content:center;margin-bottom:18px}.hero__info p{font:300 clamp(11px,3.5vw,14px)/150% Sora,sans-serif;position:absolute;z-index:3;margin-left:-70px}.hero__info img{max-width:clamp(80px,25vw,95px);margin-top:5px;position:relative;z-index:-10;margin-left:220px;width:100%}.hero__info p span{font-weight:700}.hero__icon1{position:absolute;right:clamp(-20px,-11vw,500px);top:211px}.hero__icon2{position:absolute;left:clamp(-36px,-11vw,500px);top:196px}.hero__icon3{position:absolute;right:clamp(-20px,-11vw,500px);top:437px}@media(max-width:340px){.hero__icon3{top:373px}.hero__icon2{top:175px}.hero__icon1{top:187px}}@keyframes btnWave{0%{box-shadow:0 3.05px 0 0 #977843,0 0 0 0 rgba(255,205,125,.6)}70%{box-shadow:0 3.05px 0 0 #977843,0 0 0 18px rgba(255,205,125,0)}100%{box-shadow:0 3.05px 0 0 #977843,0 0 0 0 rgba(255,205,125,0)}}
     </style>
-    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
-    <noscript>
-        <link rel="stylesheet" href="./css/main.css" />
-    </noscript>
-        <!-- Meta Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1262517525525677');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1262517525525677&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="./css/main.css"></noscript>
 </head>
-
 <body>
     <main>
         <section class="hero">
-            <div class="hero__icon" style="max-width: 390px; margin: 0 auto ; position: relative;">
-                <img class="hero__icon1" src="./images/info/1.avif" loading="lazy" decoding="async" width="45"
-                    height="43" alt="icon">
-                <img class="hero__icon2" src="./images/info/1.avif" loading="lazy" decoding="async" width="95"
-                    height="91" alt="icon">
-                <img class="hero__icon3" src="./images/info/3.avif" loading="lazy" decoding="async" width="80"
-                    height="77" alt="icon">
+            <div class="hero__icon" style="max-width:390px;margin:0 auto;position:relative">
+                <img class="hero__icon1" src="./images/info/1.avif" loading="lazy" decoding="async" width="45" height="43" alt="icon">
+                <img class="hero__icon2" src="./images/info/1.avif" loading="lazy" decoding="async" width="95" height="91" alt="icon">
+                <img class="hero__icon3" src="./images/info/3.avif" loading="lazy" decoding="async" width="80" height="77" alt="icon">
             </div>
             <div class="hero__container">
                 <div class="hero__top">
+                    <div class="hero__top-min"><p>ONLAYN TAQDIMOT</p></div>
                     <div class="hero__top-min">
-                        <p>ONLAYN TAQDIMOT</p>
-                    </div>
-                    <div class="hero__top-min">
-                        <img src="./images/calendar.png" loading="lazy" decoding="async" width="12" height="13"
-                            alt="calendar">
+                        <img src="./images/calendar.png" loading="lazy" decoding="async" width="12" height="13" alt="calendar">
                         <p>30-Aprel 20:00</p>
                     </div>
                 </div>
                 <p class="text">Toshkent viloyati, Olmaliq shahri.</p>
-
-                <h1 class="hero__title">Komfort klass <br> <span>loyihasidan 100 ta</span> <br> xonadonga katta aksiya. </h1>
-                <p class="text" style="margin-bottom: -10px;">Faqat Telegram kanalimizga obuna bo‘lganlar uchun.</p>
+                <h1 class="hero__title">Komfort klass <br> <span>loyihasidan 100 ta</span> <br> xonadonga katta aksiya.</h1>
+                <p class="text" style="margin-bottom:-10px">Faqat Telegram kanalimizga obuna bo‘lganlar uchun.</p>
             </div>
             <div class="containers">
-                <img class="hero__images" src="./images/mainImg.avif" loading="lazy" decoding="async" width="460"
-                    height="322" alt="main Img">
-
+                <img class="hero__images" src="./images/mainImg.avif" loading="eager" fetchpriority="high" decoding="async" width="460" height="322" alt="main Img">
             </div>
-
             <div class="hero__container">
-                <a class="hero__btn" style="margin-top: -55px; position: relative; z-index: 5;"
-                    href="https://t.me/+-gifZULkXE8yYTdi">
-                    Taqdimotga ro’yxatdan o’tish
-                </a>
-
+                <a class="hero__btn" style="margin-top:-55px;position:relative;z-index:5" href="https://t.me/+-gifZULkXE8yYTdi">Taqdimotga ro’yxatdan o’tish</a>
                 <div class="hero__info">
-                    <p>Uylar haqida ma’lumot olishni <br> istaysizmi? <span>Yuqoridagi tugmani bosib <br> telegram
-                            kanalimizga
-                            qo‘shiling</span>
-                    </p>
+                    <p>Uylar haqida ma’lumot olishni <br> istaysizmi? <span>Yuqoridagi tugmani bosib <br> telegram kanalimizga qo‘shiling</span></p>
                     <img src="./images/arrow.avif" loading="lazy" decoding="async" alt="arrow">
                 </div>
-
             </div>
         </section>
     </main>
-
+    <!-- Meta Pixel Code -->
+    <script defer>
+    (function(){function l(){if(window.fbq)return;!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1262517525525677');fbq('track','PageView');}var r='requestIdleCallback' in window?function(){requestIdleCallback(l,{timeout:2500})}:function(){setTimeout(l,1500)};document.readyState==='complete'?r():addEventListener('load',r,{once:true});})();
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1262517525525677&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
 </body>
-
 </html>

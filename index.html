@@ -1,140 +1,96 @@
 <!DOCTYPE html>
 <html lang="uz">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#020411">
     <title>Olmaliq City</title>
+    <link rel="preload" as="image" href="./images/mainImg.avif" fetchpriority="high" type="image/avif">
+    <link rel="preload" as="image" href="./images/bg.avif" type="image/avif">
+    <link rel="preload" as="font" type="font/woff2" href="./font/kuunari-black-subset%20(1).woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="./font/kuunari-bold-subset.v2.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="./font/Italianno-Regular-subset-apos.woff2" crossorigin>
+    <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+    <link rel="preconnect" href="https://www.facebook.com" crossorigin>
+    <link rel="dns-prefetch" href="https://connect.facebook.net">
     <style>
-        * { padding: 0; margin: 0; box-sizing: border-box } body, html { overflow-x: hidden; } body { background-color: #020411; } .hero { padding-top: 16px; padding-bottom: 36px; } .hero__container { max-width: 490px; margin: 0 auto; padding: 0 10px; } .wrapper { background-image: url(./images/bg.avif); background-repeat: no-repeat; background-size: cover; } .hero__top { display: flex; align-items: center; justify-content: center; gap: 30px; margin-bottom: 16px; max-width: 450px; width: 100%; } .hero__top-min { border-left: 1px solid white; padding-left: 5px; display: flex; align-items: center; gap: 6px; } .hero__top-min p { font-family: Inter, sans-serif; font-weight: 400; font-size: 18px; line-height: 130%; color: #FFE9A6; } .hero__top-min span { font-family: Inter, sans-serif; font-weight: 400; font-size: 16px; line-height: 130%; color: white; } .hero__title { font-family: Kuunari, sans-serif; font-weight: 900; font-size: clamp(28px, 8.9vw, 42px); line-height: 120%; text-align: center; text-transform: uppercase; margin-bottom: 16px; color: white; } .hero__title span { color: #FFD045; } .hero__main { max-width: 490px; margin: 0 auto; position: relative; } .hero__main p { font-family: Italianno, sans-serif; font-weight: 400; font-size: clamp(25px, 8.5vw, 32px); line-height: 100%; position: absolute; letter-spacing: 2%; top: clamp(10px, 2.5vw, 22px); margin-bottom: -30px; margin-left: clamp(153px, 40.5vw, 272px); white-space: nowrap; color: white; transform: rotate(8.47deg); } .hero__main img { max-width: 490px; width: 100%; height: auto; margin-bottom: -90px; -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%), linear-gradient(to bottom, #000 65%, transparent 100%); -webkit-mask-composite: source-in; mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%), linear-gradient(to bottom, #000 65%, transparent 100%); mask-composite: intersect; } .hero__btn { max-width: 441px; width: 100%; background: linear-gradient(270deg, #FECC63 3.64%, #FFE7B9 40.8%, #FED48C 91.15%); padding: 45px 0; display: flex; align-items: center; justify-content: center; gap: 8px; color: black; text-decoration: none; font-family: Kuunari, sans-serif; font-weight: 700; font-size: clamp(23px, 7vw, 30px); line-height: 100%; letter-spacing: 5%; margin: 0 auto; border-radius: 24px; border: none; cursor: pointer; margin-top: -20px; position: relative; z-index: 2; text-align: center; text-transform: uppercase; } @media (max-width:340px) { .hero__btn { padding: 38px 0; } } @keyframes btnWave { 0% { box-shadow: 0 0 0 0 rgba(254,204,99,0.6); } 70% { box-shadow: 0 0 0 18px rgba(254,204,99,0); } 100% { box-shadow: 0 0 0 0 rgba(254,204,99,0); } } .hero__btn { animation: btnWave 1.8s infinite; }
+        *{padding:0;margin:0;box-sizing:border-box}body,html{overflow-x:hidden}body{background:#020411}.hero{padding:16px 0 36px}.hero__container{max-width:490px;margin:0 auto;padding:0 10px}.wrapper{background:url(./images/bg.avif) no-repeat center/cover}.hero__top{display:flex;align-items:center;justify-content:center;gap:30px;margin-bottom:16px;max-width:450px;width:100%}.hero__top-min{border-left:1px solid #fff;padding-left:5px;display:flex;align-items:center;gap:6px}.hero__top-min p{font:400 18px/130% Inter,sans-serif;color:#FFE9A6}.hero__top-min span{font:400 16px/130% Inter,sans-serif;color:#fff}.hero__title{font:900 clamp(28px,8.9vw,42px)/120% Kuunari,sans-serif;text-align:center;text-transform:uppercase;margin-bottom:16px;color:#fff}.hero__title span{color:#FFD045}.hero__main{max-width:490px;margin:0 auto;position:relative}.hero__main p{font:400 clamp(25px,8.5vw,32px)/100% Italianno,sans-serif;position:absolute;letter-spacing:2%;top:clamp(10px,2.5vw,22px);margin:0 0 -30px clamp(153px,40.5vw,272px);white-space:nowrap;color:#fff;transform:rotate(8.47deg)}.hero__main img{max-width:490px;width:100%;height:auto;margin-bottom:-90px;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 8%,#000 92%,transparent 100%),linear-gradient(to bottom,#000 65%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0%,#000 8%,#000 92%,transparent 100%),linear-gradient(to bottom,#000 65%,transparent 100%);mask-composite:intersect}.hero__btn{max-width:441px;width:100%;background:linear-gradient(270deg,#FECC63 3.64%,#FFE7B9 40.8%,#FED48C 91.15%);padding:45px 0;display:flex;align-items:center;justify-content:center;gap:8px;color:#000;text-decoration:none;font:700 clamp(23px,7vw,30px)/100% Kuunari,sans-serif;letter-spacing:5%;margin:-20px auto 0;border-radius:24px;border:0;cursor:pointer;position:relative;z-index:2;text-align:center;text-transform:uppercase;animation:btnWave 1.8s infinite}@media(max-width:340px){.hero__btn{padding:38px 0}}@keyframes btnWave{0%{box-shadow:0 0 0 0 rgba(254,204,99,.6)}70%{box-shadow:0 0 0 18px rgba(254,204,99,0)}100%{box-shadow:0 0 0 0 rgba(254,204,99,0)}}
     </style>
-    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
-    <noscript>
-        <link rel="stylesheet" href="./css/main.css" />
-    </noscript>
-    <!-- Meta Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '26614846378147746');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=26614846378147746&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="./css/main.css"></noscript>
 </head>
-
 <body>
-
     <main>
         <section class="hero">
             <div class="hero__container">
                 <div class="wrapper">
                     <div class="hero__top">
                         <div class="hero__top-min">
-                            <p>20:00 <br>
-                            </p>
+                            <p>20:00</p>
                             <span>Vaqti</span>
                         </div>
                         <div class="hero__top-min">
-                            <p>30-Aprel
-                                <br>
-                            </p>
+                            <p>30-Aprel</p>
                             <span>Kuni</span>
                         </div>
                     </div>
-
-                    <h1 class="hero__title">Olmaliq shahrida <span>200 mln <br> so‘mgacha chegirma</span> bilan <br>
-                        yangi uy xarid qiling.
-                    </h1>
+                    <h1 class="hero__title">Olmaliq shahrida <span>200 mln <br> so‘mgacha chegirma</span> bilan <br> yangi uy xarid qiling.</h1>
                 </div>
             </div>
             <div class="hero__main">
                 <p>Komfort klassdagi loyiha</p>
-
-                <img src="./images/mainImg.avif" loading="lazy" decoding="async" width="490" height="555" alt="mainImg">
+                <img src="./images/mainImg.avif" loading="eager" fetchpriority="high" decoding="async" width="490" height="555" alt="mainImg">
             </div>
-
-            <div style="padding: 0 10px;">
+            <div style="padding:0 10px">
                 <button class="hero__btn webinar-cta">
                     Taqdimotga qatnashish
-                    <img src="./images/telegram.avif" loading="lazy" decoding="async" width="29" height="29"
-                        alt="telegram">
+                    <img src="./images/telegram.avif" loading="lazy" decoding="async" width="29" height="29" alt="telegram">
                 </button>
             </div>
         </section>
     </main>
 
-
-
-     <!-- Modal -->
-    <div id="registrationModal" class="homeModal" style="display: none">
+    <div id="registrationModal" class="homeModal" style="display:none">
         <div class="homeModalOverlay"></div>
         <div class="homeFormContainer">
             <button class="closeButton" id="closeModalBtn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
-                    <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" />
+                    <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
             </button>
             <div class="homeFormTop">
-                <h1 class="homeFormTopTitle">
-                    Davom etish uchun telefon <br> raqamingizni qoldiring
-                </h1>
+                <h1 class="homeFormTopTitle">Davom etish uchun telefon <br> raqamingizni qoldiring</h1>
             </div>
             <form id="registrationForm" name="contact-form">
-                <!-- TELEFON -->
                 <div class="HomeFormRow">
                     <label class="HomeFormRowLabel" for="phone">Telefon raqamingiz:</label>
-
                     <div class="phone-input-container">
-                        <!-- LEFT: country -->
                         <button type="button" class="selected-country" id="selectedCountry">
                             <span class="selected-flag" id="selectedCountryFlag">🇺🇿</span>
-
-                            <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
+                            <svg id="dropdownIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg>
                             <span class="selected-code" id="selectedCountryCodeText">+998</span>
                         </button>
-
-                        <!-- dropdown -->
                         <div class="country-dropdown" id="countryDropdown" style="display:none"></div>
-
-                        <!-- RIGHT: phone input (number span inside) -->
                         <div class="phone-field">
-                            <input class="HomeFormRowInput phone-input" type="tel" id="phone" name="phone"
-                                inputmode="numeric" placeholder="88 888 88 88" autocomplete="tel"
-                                style="border: none; background-color: transparent;padding-left: 5px;" />
+                            <input class="HomeFormRowInput phone-input" type="tel" id="phone" name="phone" inputmode="numeric" placeholder="88 888 88 88" autocomplete="tel" style="border:0;background:transparent;padding-left:5px">
                         </div>
                     </div>
-
-                    <p class="homeFormErrorText" id="phoneError" style="display:none">
-                        ❌ Telefon raqam mos emas!
-                    </p>
+                    <p class="homeFormErrorText" id="phoneError" style="display:none">❌ Telefon raqam mos emas!</p>
                 </div>
-
-
-                <button type="submit" class="HomeFormBtn" id="submitBtn">
-                    DAVOM ETISH
-                </button>
+                <button type="submit" class="HomeFormBtn" id="submitBtn">DAVOM ETISH</button>
             </form>
-
         </div>
     </div>
-    <script src="./js/phoneFormatter.js"></script>
-    <script src="./js/app.js"></script>
-    
 
+    <script src="./js/phoneFormatter.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <!-- Meta Pixel Code -->
+    <script defer>
+    (function(){function l(){if(window.fbq)return;!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','26614846378147746');fbq('track','PageView');}var r='requestIdleCallback' in window?function(){requestIdleCallback(l,{timeout:2500})}:function(){setTimeout(l,1500)};document.readyState==='complete'?r():addEventListener('load',r,{once:true});})();
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=26614846378147746&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
 </body>
-
 </html>
