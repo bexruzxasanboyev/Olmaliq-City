@@ -2,40 +2,34 @@
     font-family: "Kuunari";
     src: url("../font/kuunari-bold-subset.v2.woff2") format("woff2");
     font-weight: 700;
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Sora";
     src: url("/a/font/Sora-Regular-subset.woff2") format("woff2");
     font-weight: 400;
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Kuunari";
     src: url("../font/kuunari-black-subset\ \(1\).woff2") format("woff2");
     font-weight: 900;
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Italianno";
     src: url("../font/Italianno-Regular-subset-apos.woff2") format("woff2");
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Bebas Neue";
-    src: url("../font/BebasNeue-Regular.subset-AZa-z-0-9-punct-percent.woff2") format("woff2");
-    font-display: swap
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Bebas Neue";
     src: url(../font/BebasNeue-Regular.subset-AZa-z-0-9-punct-percent.woff2);
     font-weight: 400;
-    font-display: swap
+    font-display: swap;
 }
 
 .homeModal,
@@ -158,11 +152,11 @@
     width: 100%;
     cursor: pointer;
     border-radius: 10px;
-    background: linear-gradient(270deg, #FECC63 3.64%, #FFE7B9 40.8%, #FED48C 91.15%);
+    background: linear-gradient(135deg, #FF4B2B 0%, #FF416C 100%);
     transition: 0.3s;
     font-weight: 700;
     font-size: 28px;
-    color: black;
+    color: white;
     text-transform: uppercase;
     border: none;
     position: relative;
