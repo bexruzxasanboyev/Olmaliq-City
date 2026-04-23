@@ -1,16 +1,162 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#020411">
     <title>Olmaliq City</title>
     <style>
-        *{padding:0;margin:0;box-sizing:border-box}body,html{overflow-x:hidden}body{background:#020411}.hero{padding:16px 0 36px}.hero__container{max-width:490px;margin:0 auto;padding:0 10px}.wrapper{background:url(./images/bg.avif) no-repeat center/cover}.hero__top{display:flex;align-items:center;justify-content:center;gap:30px;margin-bottom:16px;max-width:450px;width:100%}.hero__top-min{border-left:1px solid #fff;padding-left:5px;display:flex;align-items:center;gap:6px}.hero__top-min p{font:400 18px/130% Inter,sans-serif;color:#FFE9A6}.hero__top-min span{font:400 16px/130% Inter,sans-serif;color:#fff}.hero__title{font:900 clamp(28px,8.9vw,42px)/120% Kuunari,sans-serif;text-align:center;text-transform:uppercase;margin-bottom:16px;color:#fff}.hero__title span{color:#FFD045}.hero__main{max-width:490px;margin:0 auto;position:relative}.hero__main p{font:400 clamp(25px,8.5vw,32px)/100% Italianno,sans-serif;position:absolute;letter-spacing:2%;top:clamp(10px,2.5vw,22px);margin:0 0 -30px clamp(153px,40.5vw,272px);white-space:nowrap;color:#fff;transform:rotate(8.47deg)}.hero__main img{max-width:490px;width:100%;height:auto;margin-bottom:-90px;-webkit-mask-image:linear-gradient(to right,transparent 0%,#000 8%,#000 92%,transparent 100%),linear-gradient(to bottom,#000 65%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0%,#000 8%,#000 92%,transparent 100%),linear-gradient(to bottom,#000 65%,transparent 100%);mask-composite:intersect}.hero__btn{max-width:441px;width:100%;background:linear-gradient(270deg,#FECC63 3.64%,#FFE7B9 40.8%,#FED48C 91.15%);padding:45px 0;display:flex;align-items:center;justify-content:center;gap:8px;color:#000;text-decoration:none;font:700 clamp(23px,7vw,30px)/100% Kuunari,sans-serif;letter-spacing:5%;margin:-20px auto 0;border-radius:24px;border:0;cursor:pointer;position:relative;z-index:2;text-align:center;text-transform:uppercase;animation:btnWave 1.8s infinite}@media(max-width:340px){.hero__btn{padding:38px 0}}@keyframes btnWave{0%{box-shadow:0 0 0 0 rgba(254,204,99,.6)}70%{box-shadow:0 0 0 18px rgba(254,204,99,0)}100%{box-shadow:0 0 0 0 rgba(254,204,99,0)}}
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box
+        }
+        
+        body,
+        html {
+            overflow-x: hidden
+        }
+        
+        body {
+            background: #020411
+        }
+        
+        .hero {
+            padding: 16px 0 36px
+        }
+        
+        .hero__container {
+            max-width: 490px;
+            margin: 0 auto;
+            padding: 0 10px
+        }
+        
+        .wrapper {
+            background: url(./images/bg.avif) no-repeat center/cover
+        }
+        
+        .hero__top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 16px;
+            max-width: 450px;
+            width: 100%
+        }
+        
+        .hero__top-min {
+            border-left: 1px solid #fff;
+            padding-left: 5px;
+            display: flex;
+            align-items: center;
+            gap: 6px
+        }
+        
+        .hero__top-min p {
+            font: 400 18px/130% Inter, sans-serif;
+            color: #FF4B2B
+        }
+        
+        .hero__top-min span {
+            font: 400 16px/130% Inter, sans-serif;
+            color: #fff
+        }
+        
+        .hero__title {
+            font: 900 clamp(28px, 8.9vw, 42px)/120% Kuunari, sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            color: #fff
+        }
+        
+        .hero__title span {
+            color: #FF4B2B
+        }
+        
+        .hero__text {
+            font: 500 clamp(11px, 3.4vw, 16px)/120% Sora, sans-serif;
+            text-align: center;
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        .hero__main {
+            max-width: 490px;
+            margin: 0 auto;
+            position: relative
+        }
+        
+        .hero__main p {
+            font: 400 clamp(25px, 8.5vw, 32px)/100% Italianno, sans-serif;
+            position: absolute;
+            letter-spacing: 2%;
+            top: clamp(10px, 2.5vw, 22px);
+            margin: 0 0 -30px clamp(153px, 40.5vw, 272px);
+            white-space: nowrap;
+            color: #fff;
+            transform: rotate(8.47deg)
+        }
+        
+        .hero__main img {
+            max-width: 490px;
+            width: 100%;
+            height: auto;
+            margin-bottom: -90px;
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%), linear-gradient(to bottom, #000 65%, transparent 100%);
+            -webkit-mask-composite: source-in;
+            mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%), linear-gradient(to bottom, #000 65%, transparent 100%);
+            mask-composite: intersect
+        }
+        
+        .hero__btn {
+            max-width: 441px;
+            width: 100%;
+            background: linear-gradient(135deg, #FF4B2B 0%, #FF416C 100%);
+            padding: 42px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: white;
+            text-decoration: none;
+            font: 700 clamp(23px, 7vw, 34px)/100% Kuunari, sans-serif;
+            letter-spacing: 5%;
+            margin: -20px auto 0;
+            border-radius: 26px;
+            border: 0;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            text-transform: uppercase;
+            animation: btnWave 1.8s infinite
+        }
+        
+        @media(max-width:340px) {
+            .hero__btn {
+                padding: 38px 0
+            }
+        }
+        
+        @keyframes btnWave {
+            0% {
+                box-shadow: 0 0 0 0 #FF4B2B
+            }
+            70% {
+                box-shadow: 0 0 0 18px rgba(254, 204, 99, 0)
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(254, 204, 99, 0)
+            }
+        }
     </style>
     <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="./css/main.css"></noscript>
 </head>
+
 <body>
     <main>
         <section class="hero">
@@ -26,7 +172,8 @@
                             <span>Kuni</span>
                         </div>
                     </div>
-                    <h1 class="hero__title">Olmaliq shahrida <span>200 mln <br> so‘mgacha chegirma</span> bilan <br> yangi uy xarid qiling.</h1>
+                    <h1 class="hero__title">60 million bosh to'lov, Qolgan summani <span>60 oy foizsiz</span> bo'lib to'lang!</h1>
+                    <p class="hero__text">Bu aksiya bor yo'g'i 100 ta xonadon uchun amal qiladi.</p>
                 </div>
             </div>
             <div class="hero__main">
@@ -39,6 +186,7 @@
                     <img src="./images/telegram.avif" loading="lazy" decoding="async" width="29" height="29" alt="telegram">
                 </button>
             </div>
+            <p style="color: white; text-align: center; padding-top: 15px; font-family: sans-serif;">Batafsil onlayn taqdimotda bilib oling!</p>
         </section>
     </main>
 
@@ -79,21 +227,32 @@
     <script src="./js/phoneFormatter.js" defer></script>
     <script src="./js/app.js" defer></script>
     <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '26614846378147746');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '26614846378147746');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=26614846378147746&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
+    <!-- End Meta Pixel Code -->
 </body>
+
 </html>

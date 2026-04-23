@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: "Sora";
+    src: url("/a/font/Sora-Regular-subset.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap
+}
+
+@font-face {
     font-family: "Kuunari";
     src: url("../font/kuunari-black-subset\ \(1\).woff2") format("woff2");
     font-weight: 900;
@@ -30,7 +37,6 @@
     font-weight: 400;
     font-display: swap
 }
-
 
 .homeModal,
 .homeModalOverlay {
@@ -247,7 +253,6 @@
         border-radius: 6px;
         height: 100vh;
     }
-
     .homeFormTopTitle {
         text-align: center;
         max-width: 408px;
@@ -256,12 +261,10 @@
         font-weight: 700;
         margin-bottom: 15px;
     }
-
     .homeFormTop {
         flex-direction: column;
         align-items: flex-start;
     }
-
     .closeButton {
         width: 100%;
         height: 50px;
@@ -272,26 +275,21 @@
         left: 0;
         justify-content: end;
     }
-
     .homeFormErrorText {
         font-size: 12px;
         margin-bottom: 8px;
     }
-
     .HomeFormRowLabel {
         margin-bottom: 6px;
     }
-
     .HomeFormRowInput {
         padding: 0 12px;
         min-height: 40px;
         background-color: transparent;
     }
-
     .HomeFormRowInput::placeholder {
         color: #a3a3a3;
     }
-
     .HomeFormBtn {
         font-size: 18px;
         font-weight: 700;
@@ -307,32 +305,26 @@
         border-radius: 6px;
         height: 100vh;
     }
-
     .homeFormTopTitle {
         text-align: center;
         margin: 0 auto 15px;
     }
-
     .homeFormErrorText {
         font-size: 12px;
         margin-bottom: 8px;
     }
-
     .HomeFormRowLabel {
         margin-bottom: 6px;
     }
-
     .HomeFormRowInput {
         padding: 0 12px;
         min-height: 40px;
         background-color: transparent;
         border-radius: 10px;
     }
-
     .HomeFormRowInput::placeholder {
         color: #a3a3a3;
     }
-
     .HomeFormBtn {
         font-size: 16px;
         padding: 10px 0;
